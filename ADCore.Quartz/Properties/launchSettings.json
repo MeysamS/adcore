@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "ADCore.Quartz": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

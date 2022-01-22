@@ -1,0 +1,22 @@
+﻿using ADCore.Kafka.Attributes;
+using ADCore.Kafka.Messaging.Publisher;
+using System;
+using System.Collections.Generic;
+
+namespace ADCore.Router.CallManager.Models
+{
+    
+    [SubscribableMessage("RequestTopic")]
+    public class RequestModel : IPublishableMessage<RequestModel>
+    {
+        public string TopicName { get; set; }
+        public string Url { get; set; }
+        public Dictionary<string, string> HeaderStrings { get; set; }
+
+        public RequestModel MapTo()
+        {
+            return this;
+        }
+    }
+}
+

@@ -1,0 +1,25 @@
+{
+  "ConfigDetails": [
+    {
+      "Key": "binance.com",
+      "UseProxy": true,
+      "UseDns": false,
+      "RateLimitPeriod": 0,
+      "RateLimitCount": 0
+    },
+    {
+      "Key": "coinmarketcap.com",
+      "UseProxy": false,
+      "UseDns": false,
+      "RateLimitPeriod": 0,
+      "RateLimitCount": 0
+    },
+    {
+      "Key": "coingecko.com",
+      "UseProxy": true,
+      "UseDns": false,
+      "RateLimitPeriod": 0,
+      "RateLimitCount": 0
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "ADCore.ApiReader.Daemons": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "dev"
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ADCore.ApiReader.Context\ADCore.ApiReader.Context.csproj">
+      <Aliases>ApiReaderContext</Aliases>
+    </ProjectReference>
+    <ProjectReference Include="..\ADCore.ApiReader\ADCore.ApiReader.csproj" />
+    <ProjectReference Include="..\ADCore.WebSocket.CoinmarketCap\ADCore.WebSocket.CoinmarketCap.csproj">
+      <Aliases></Aliases>
+    </ProjectReference>
+  </ItemGroup>
+
+</Project>

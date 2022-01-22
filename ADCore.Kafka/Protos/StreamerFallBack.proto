@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "AD.Micro.FallBack";
+
+service StreamerFallBack {
+	rpc SendFallback (StreamerFallBackRequest) returns (StreamerFallBackResponse);
+}
+
+message StreamerFallBackRequest {
+	string topic = 1;
+	string message = 2;
+	string errorMessage = 3;
+	string stackTrace = 4;
+}
+
+message StreamerFallBackResponse {
+	bool success = 1;
+}

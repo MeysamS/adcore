@@ -1,0 +1,2 @@
+﻿dotnet ef --startup-project ../ADCore.ApiReader.APi/ migrations add InitialDatabase --context ApiReaderDbContext
+dotnet ef --startup-project ../ADCore.ApiReader.APi/ database update --context ApiReaderDbContext

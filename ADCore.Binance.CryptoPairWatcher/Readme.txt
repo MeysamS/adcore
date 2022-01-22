@@ -1,0 +1,2 @@
+﻿dotnet ef --startup-project ../ADCore.Binance.CryptoPairWatcher/ migrations add InitialDatabase --context BinanceDbContext
+dotnet ef --startup-project ../ADCore.Binance.CryptoPairWatcher/ database update --context BinanceDbContext

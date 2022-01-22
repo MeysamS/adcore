@@ -1,0 +1,63 @@
+{
+  "ConfigDetails": [
+    {
+      "Key": "binance.com-coins",
+      "Url": "https://www.binance.com/bapi/asset/v2/public/asset/asset/get-all-asset",
+      "PropertySetsDic": {
+        "Coins#Name": "data#assetName",
+        "Coins#Symbol": "data#assetCode",
+        "Coins#Trading": "data#trading",
+        "Coins#Etf": "data#etf"
+      }
+    },
+    {
+      "Key": "binance.com-CoinPair",
+      "Url": "https://api.binance.com/api/v3/exchangeInfo",
+      "PropertySetsDic": {
+        //"Coins#Name": "data#assetName",
+        //"Coins#Symbol": "data#assetCode",
+        //"Coins#Trading": "data#trading",
+        //"Coins#Etf": "data#etf"
+
+      }
+    },
+    {
+      "Key": "coinmarketcap.com",
+      "Url": "https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest",
+      "QueryStrings": {
+        "start": "1",
+        "limit": "5000",
+        "convert": "USD"
+      },
+      "HeaderStrings": {
+        "X-CMC_PRO_API_KEY": "9a518333-7cb0-4c5f-8525-c43b47000982",
+        "Accepts": "application/json"
+      },
+      "PropertySetsDic": {
+        "Coins#CoinMarketId": "data#id",
+        "Coins#Name": "data#name",
+        "Coins#Symbol": "data#symbol",
+        "Coins#Slug": "data#slug"
+      }
+    },
+    {
+      "Key": "coingecko.com",
+      "Url": "https://api.coingecko.com/api/v3/coins/list",
+      "QueryStrings": {
+        "start": "1",
+        "limit": "5000",
+        "convert": "USD"
+      },
+      "HeaderStrings": {
+        "X-CMC_PRO_API_KEY": "9a518333-7cb0-4c5f-8525-c43b47000982",
+        "Accepts": "application/json"
+      },
+      "PropertySetsDic": {
+        "Coins#Name": "#name",
+        "Coins#Symbol": "#symbol",
+        "Coins#Slug": "#id"
+      }
+    }
+
+  ]
+}
